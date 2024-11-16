@@ -72,6 +72,9 @@ nav ul li a:hover {
     justify-content: center;
     color: white; 
 }
+#ourstore {
+    text-align: center;
+}
 
 #shop-now {
     background-color: #ffcc80;
