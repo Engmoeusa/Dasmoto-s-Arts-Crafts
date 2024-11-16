@@ -35,17 +35,17 @@ nav {
     z-index: 1000; 
 }
 
+/* التصميم الافتراضي للقائمة */
 nav ul {
-    list-style: none; 
+    display: flex; /* عرض أفقي للعناصر */
+    justify-content: center; /* توسيط العناصر */
+    list-style: none;
+    padding: 0;
     margin: 0;
-    padding: 0 20px;
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
 }
 
 nav ul li {
-    margin: 0 15px; 
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -228,8 +228,38 @@ footer {
 /* استجابة للشاشات الصغيرة */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        gap: 10px;
+        display: none; /* إخفاء القائمة */
+        flex-direction: column; /* تحويل القائمة إلى عمودية */
+        background-color: rgba(0, 0, 0, 0.8); /* خلفية داكنة */
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    nav ul.show {
+        display: flex; /* عرض القائمة عند التفعيل */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /* أيقونة القائمة */
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 20px;
     }
 
     .footer-container {
