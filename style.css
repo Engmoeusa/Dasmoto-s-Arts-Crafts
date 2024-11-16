@@ -1,0 +1,248 @@
+/* التصميم الأساسي */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* الشعار */
+#logo {
+    margin-right: auto; 
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+#logo a {
+    text-decoration: none; 
+    color: #fff; 
+    transition: color 0.3s; 
+}
+
+#logo a:hover {
+    color: #ffcc80; 
+}
+
+/* قائمة التنقل */
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 18px; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+}
+
+nav ul li a:hover {
+    color: #ffcc80; 
+}
+
+/* البانر */
+#banner {
+    background-image: url('./imgs/pattern.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    height: 950px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+}
+
+#shop-now {
+    background-color: #ffcc80;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#shop-now:hover {
+    background-color: #ffe0b2;
+    transform: scale(1.05);
+}
+
+/* قسم المنتجات */
+.product-section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.product-section h4 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.product-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.product-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* قسم About */
+.about-section {
+    background-color: #f8f9fa;
+    padding: 40px 20px; 
+    margin: 20px 0; 
+    text-align: center; 
+    border-radius: 8px; 
+    color: #333; 
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff8c00; 
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+/* قسم Contact */
+.contact-section {
+    background-color: #e8f5e9; 
+    padding: 40px 20px; 
+    margin: 20px 0; 
+    text-align: center; 
+    border-radius: 8px; 
+    color: #333; 
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #388e3c; 
+}
+
+.contact-section p {
+    font-size: 18px;
+    line-height: 1.6; 
+    max-width: 800px; 
+    margin: 0 auto 20px; 
+}
+
+.contact-section a {
+    color: blue; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.contact-section a:hover {
+    color: #2e7d32; 
+}
+
+/* الفوتر */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-nav, .footer-contact, .footer-social {
+    flex: 1; 
+    margin: 10px;
+}
+
+.footer-nav ul, .footer-contact ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li, .footer-contact ul li, .footer-social ul li {
+    margin: 5px 0;
+}
+
+.footer-nav ul li a, .footer-contact ul li a, .footer-social ul li a {
+    color: #ffcc80;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover, .footer-contact ul li a:hover, .footer-social ul li a:hover {
+    text-decoration: underline;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #banner {
+        height: 300px;
+    }
+
+    #banner h1 {
+        font-size: 20px;
+    }
+
+    #shop-now {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

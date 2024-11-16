@@ -1,9 +1,145 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts and Crafts Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dasmoto's Arts & Crafts Store: Handcrafted brushes, frames, and paints for all your creative needs.">
+    <meta name="keywords" content="Arts, Crafts, Store, Brushes, Frames, Paints, Handmade, Creative">
+    <meta name="author" content="Moamen Shaaban">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="http://www.moamen.co">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./imgs/favicon.jpeg">
+    <title>Arts and Crafts Store</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
 
 <body>
-  <h1>YOUR NAME</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+
+    <nav>
+        <ul>
+            <li id="logo"><a href="#">Dasmoto's</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#ourstore">Store</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <header>
+        <div id="banner">
+            <h1>Dasmoto's Arts & Crafts</h1>
+            <button id="shop-now" onclick="location.href='#ourstore'">Discover Our Products</button>
+
+        </div>
+    </header>
+
+    <div class="our">
+        <h2 id="ourstore">Our Store</h2>
+    </div>
+
+
+    <!-- Brushes Section -->
+    <section class="product-section" id="brushes">
+        <h2>Brushes</h2>
+        <img src="./imgs/hacksaw.jpeg" alt="Hacksaw Brushes">
+        <h4>Hacksaw Brushes</h4>
+        <p>Made of the highest quality oak, Hacksaw brushes are known for their weight and
+            ability to hold paint in large amounts. Available in different sizes.
+            Starting at $3.00/brush.</p>
+            <button class="buy-now">Buy Now</button>
+    </section>
+
+    <!-- Frame Section -->
+    <section class="product-section" id="frames">
+        <h2>Frames</h2>
+        <img src="./imgs/frames.jpeg" alt="Art frames">
+        <h4>Art Frames (assorted)</h4>
+        <p>Assorted frames made of different material, including MDF, birchwood, and PDE. Select frames can be sanded
+            and painted according to your needs. Starting at $2.00/frame.</p>
+            <button class="buy-now">Buy Now</button>
+    </section>
+
+    <!-- Paint Section -->
+    <section class="product-section" id="paint">
+        <h2>Paint</h2>
+        <img src="./imgs/finnish.jpeg" alt="Clean Finnish Paint">
+        <h4>Clean Finnish Paint</h4>
+        <p>Imported paint from Finland. Over 256 colors available in-store, varying in quantity (1 oz. to 8 oz.) Clean
+            Finnish paint microbinds to canvas, increasing the finish and longevity of any artwork. Starting at
+            $5.00/tube.</p>
+            <button class="buy-now">Buy Now</button>
+    </section>
+
+    <section class="about-section" id="about">
+        <h2>About</h2>
+        <p>
+            Welcome to Dasmoto's Arts & Crafts Store, a project by <strong>Moamen</strong>. 
+            This is a practical project as part of the "Front-End Engineer" training course. 
+            It showcases my design and development skills, combining creativity and functionality in one simple website.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <h2>Contact</h2>
+    <p>
+        I am <strong>Moamen</strong>, a passionate Application Developer based in Flagstaff, Arizona, USA. 
+        With a keen eye for design and functionality, I am eager to contribute to innovative projects and dynamic teams. 
+        If you're looking for a dedicated and skilled developer, feel free to get in touch!
+    </p>
+    <p>
+        <strong>Website:</strong> <a href="http://www.moamen.co" target="_blank">www.moamen.co</a><br>
+        <strong>Phone:</strong> <a href="tel:+19282211009">928-221-1009</a><br>
+        <strong>WhatsApp:</strong> <a href="https://wa.me/19282211009" target="_blank">Message me on WhatsApp</a><br>
+        <strong>Address:</strong> Flagstaff, Arizona, USA
+    </p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-nav">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#ourstore">Store</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <div class="footer-contact">
+            <h3>Contact Info</h3>
+            <ul>
+                <li><strong>Name:</strong>Moamen</li>
+                <li><strong>Phone:</strong> <a href="tel:+19282211009">928-221-1009</a></li>
+                <li><strong>Address:</strong> Flagstaff, Arizona, USA</li>
+                <li><strong>Projects:</strong> <a href="http://www.moamen.co" target="_blank">www.moamen.co</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h3>Follow Me</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/moamen-shaban-38b011304/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@moamenahmedservicenowproje7177" target="_blank">YouTube</a></li>
+                <li><a href="https://nowlearning.servicenow.com/lxp/en/pages/nl-public-resume?id=nl_public&user=engmoamenu96190d" target="_blank">ServiceNow</a></li>
+                <li><a href="http://www.moamen.co" target="_blank">My Website</a></li>
+                <li><a href="https://www.codecademy.com/profiles/Eng.Moamen" target="_blank">Codecademy</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+
 </body>
 
 </html>
