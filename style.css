@@ -225,11 +225,23 @@ footer {
     text-decoration: underline;
 }
 
+/* تصميم أيقونة القائمة */
+.menu-toggle {
+    display: none; /* افتراضيًا مخفية على الشاشات الكبيرة */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
 /* استجابة للشاشات الصغيرة */
 @media (max-width: 768px) {
+
     nav ul {
-        display: none; /* إخفاء القائمة */
-        flex-direction: column; /* تحويل القائمة إلى عمودية */
+        display: none; /* إخفاء القائمة افتراضيًا */
+        flex-direction: column; /* ترتيب عمودي للقائمة */
         background-color: rgba(0, 0, 0, 0.8); /* خلفية داكنة */
         position: absolute;
         top: 50px;
@@ -240,7 +252,7 @@ footer {
     }
 
     nav ul.show {
-        display: flex; /* عرض القائمة عند التفعيل */
+        display: flex; /* عرض القائمة عند النقر */
     }
 
     nav ul li {
@@ -251,15 +263,8 @@ footer {
         font-size: 16px;
     }
 
-    /* أيقونة القائمة */
     .menu-toggle {
-        display: block;
-        font-size: 24px;
-        color: white;
-        cursor: pointer;
-        position: absolute;
-        top: 15px;
-        right: 20px;
+        display: block; /* إظهار أيقونة القائمة على الشاشات الصغيرة */
     }
 
     .footer-container {
